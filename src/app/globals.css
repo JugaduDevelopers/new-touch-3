@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-2xl mb-2 sm:text-3xl md:mb-5 xl:text-6xl font-900 text-blackX;
+}
+h2 {
+  @apply text-5xl font-700 text-blackX;
+}
+h3 {
+  @apply text-2xl mb-2 md:mb-5 sm:text-4xl font-700 text-blackX;
+}
+h4 {
+  @apply text-2xl font-700 text-blackX;
+}
+p {
+  @apply text-sm mb-2 sm:text-base md:mb-5 xl:text-xl text-blackX text-opacity-80 font-700;
+}
+
+.colorSplitLaserTech {
+  background: linear-gradient(
+    to bottom,
+    #ffd7d7 0%,
+    #ffd7d7 70%,
+    white 70%,
+    white 100%
+  );
+  @media only screen and (max-width: 768px) {
+    background: linear-gradient(to bottom, pink 0%, pink 100%);
+  }
+}
+.text-gradient {
+  background: linear-gradient(180deg, #fff 15.29%, #d24648 77.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box {
+  border: 8px solid white;
+  box-shadow: 50px 50px 0px #ededed, 60px 60px #ebd0d0, 40px 60px #ebd0d0,
+    60px 40px #ebd0d0;
+
+  @media screen and (max-width: 640px) {
+    box-shadow: 30px 40px 0px #ededed, 40px 50px #ebd0d0, 20px 50px #ebd0d0,
+      40px 30px #ebd0d0;
+  }
+}
+
+.rc-accordion-toggle {
+  @apply bg-pinkX flex items-center justify-between transition-all duration-1000 border-2 border-redX border-opacity-60 rounded-md;
+}
+
+.rc-accordion-toggle.active .rotateIcon {
+  transform: rotate(180deg);
+}
+
+.rc-accordion-title {
+  @apply relative text-xs sm:text-lg text-blackX font-700 mb-0 transition-all duration-700;
+}
+
+.rc-accordion-card {
+  @apply mb-5 overflow-hidden max-w-4xl;
+}
+
+.rc-collapse {
+  @apply bg-greyX w-[90%] relative h-0 overflow-hidden transition-all duration-500 ease-in-out;
+}
+
+.rc-collapse.show {
+  @apply h-auto;
+}
+
+/* new styles added */
+.swiper-button {
+  @apply bg-pinkX h-7 text-base text-darkPinkX border-opacity-60 flex rounded-md border-2 border-blackX drop-shadow-2xl aspect-square  items-center justify-center;
+  position: absolute;
+  top: calc(50% - 12px);
+  z-index: 10;
+  cursor: pointer;
+}
+.image-swiper-button-prev {
+  left: 3%;
+}
+.image-swiper-button-next {
+  right: 3%;
+}
+.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+hr.zig,
+hr.zag {
+  border: none;
+  height: 30px;
+  margin: 0 50px;
+}
+
+hr.zig {
+  background: linear-gradient(-135deg, #fff 20px, rgba(0, 0, 0, 0) 0) 0 5px,
+    linear-gradient(135deg, #fff 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 100;
+  position: relative;
+}
+
+hr.zag {
+  background: linear-gradient(-135deg, #333 20px, rgba(0, 0, 0, 0) 0) 0 5px,
+    linear-gradient(135deg, #333 20px, #fff 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 50;
+  margin-top: -28px;
+}
+
+.diffShadow {
+  box-shadow: 2rem 3rem #f5f5f5;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.text-container {
+  overflow: hidden;
+}
+
+.scrolling-text {
+  text-shadow: 0 0 4px #d24648;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d24648;
+  white-space: nowrap;
+  display: inline-block;
+  animation: scrolling 20s linear infinite;
+}
+
+footer {
+  @apply text-white;
+
+  h4 {
+    @apply text-whiteX mb-2;
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    text-align: center;
+    line-height: 10px !important;
+    font-size: 12px;
+    opacity: 1;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 3px;
+    cursor: pointer;
+  }
+  .swiper-pagination-bullet-active {
+    color: white;
+    background: #d24648;
+    transform: scale(1);
+  }
+}
+
+.left-pagination .swiper-pagination {
+  display: flex;
+  justify-content: flex-end;
+  /* Other styles for pagination container */
+}
+
+.left-pagination .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.left-pagination .swiper-slide {
+  display: flex;
+  flex-shrink: 2;
+}
+
+.left-pagination .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  text-align: center;
+  line-height: 10px !important;
+  font-size: 12px;
+  opacity: 1;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 3px;
+  cursor: pointer;
+}
+
+.left-pagination .swiper-pagination-bullet-active {
+  color: white;
+  background: #d24648;
+  transform: scale(1);
+}
