@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <div className="bg-darkred text-whiteX">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-5">
           <footer className="grid-cols-auto-fit grid gap-2 max-md:gap-10 items-center sm:justify-items-center py-10">
             <Image className="max-lg:hidden" src={logo} alt="Logo" />
             <div className="max-lg:hidden">

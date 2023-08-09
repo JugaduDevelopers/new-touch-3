@@ -24,6 +24,8 @@ import facebook from "../../public/images/facebook.png";
 import therapy from "../../public/images/therapy.png";
 import bagallery from "../../public/images/bagallery.png";
 import bagallery1 from "../../public/images/bagallery1.png";
+import logo from "../../public/images/footer-logo.png";
+
 import Girl from "../../public/images/Girl_3.png";
 type Props = {};
 
@@ -63,6 +65,17 @@ const a = [
 const Home = (props: Props) => {
   return (
     <>
+      <header className="bg-redX">
+        <div className="container mx-auto max-md:px-5 py-5 md:px-28 ">
+          <Image
+            src={logo}
+            height={100}
+            width={100}
+            alt="Logo"
+            // className="max-md:hidden ml-10"
+          />
+        </div>
+      </header>
       <section className=" bg-[#D24648] px-5 pt-10 xl:pt-0 pb-5 lg:h-[500px] xl:h-[650px]">
         <div className="relative container mx-auto  bg-[#D24648]">
           <h1 className=" hidden xl:block  absolute top-0 left-[12%]  text-gradient text-[100px] min-[1100px]:text-[130px] min-[1200px]:text-[160px] min-[1295px]:text-[180px] leading-[120%] font-900 text-center">
@@ -77,18 +90,14 @@ const Home = (props: Props) => {
                 <span className="text-white">
                   {" "}
                   PRP Treatment for Hair Loss:
-                  <br /> For Men & Women in Ahmedabad
-                </span>{" "}
+                  <br /> For Men & Women
+                </span>
                 <br /> in Ahmedabad
               </h1>
-              <h5 className="text-[25px] text-white font-900 leading-[120%]">
-                We do moreLaser Hair Reductionthan anyone else.
-              </h5>
             </div>
             <div>
               <Image src={Girl} alt="girl" />
             </div>
-            s
           </div>
         </div>
       </section>
@@ -104,15 +113,6 @@ const Home = (props: Props) => {
           </h1>
           <hr className="h-px  bg-black border-0" />
         </div>
-        <div className="min-[400px]:flex min-[400px]:justify-center min-[400px]:items-center sm:block ">
-          <div className="flex justify-center items-center mt-5 sm:hidden">
-            <Image
-              src={First}
-              alt="First"
-              className="w-[200px] bg-peach border-2 rounded-t-full rounded-b-full p-1 border-[#212121]"
-            />
-          </div>
-        </div>
       </div>
 
       {/* What is PRP therapy? */}
@@ -124,7 +124,7 @@ const Home = (props: Props) => {
             className=" h-[300px] lg:h-[500px] "
           />
         </div>
-        <div className="lg:flex-1 md:mt-44 lg:mt-0 mr-5">
+        <div className="lg:flex-1 md:mt-44 lg:mt-0 mr-5 px-2">
           <h3>What is PRP therapy?</h3>
           <p>
             <span className="text-redX">
@@ -133,7 +133,9 @@ const Home = (props: Props) => {
             for hair loss is a three-step medical treatment in which a person’s
             blood is drawn, processed and then injected into the scalp.
           </p>
-          <h3>Can Platelet-Rich Plasma (PRP) Treat Hair Loss?</h3>
+          <h3 className="mt-3">
+            Can Platelet-Rich Plasma (PRP) Treat Hair Loss?
+          </h3>
           <p>
             <span className="text-redX"> Hair loss and thinning hair </span> are
             common problems across all age groups irrespective of genders. More
@@ -262,8 +264,8 @@ const Home = (props: Props) => {
 
       {/* Statistics */}
       <div className="flex flex-col items-center justify-center py-10">
-        <h3>Our Statistics</h3>
-        <div className="flex max-w-3xl items-center sm:justify-around justify-center px-5 container mx-auto sm:pt-16 pt-10 gap-5 flex-wrap">
+        <h3 className="px-5">Our Statitics</h3>
+        <div className="flex  items-center sm:justify-around justify-center px-5 container mx-auto sm:pt-16 pt-10 gap-5 flex-wrap">
           <div className="flex flex-col sm:items-start items-center ">
             <h3 className="text-redX">24+</h3>
             <p>In-House Doctors</p>
