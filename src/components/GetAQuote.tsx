@@ -38,10 +38,10 @@ const GetAQuote = (props: Props) => {
 
     emailjs
       .send(
-        "service_kd16krp",
-        "template_2c4gyga",
+        "service_ie2w42k",
+        "template_xmxbjvu",
         templateParams,
-        "AUBnjJUI_K7l-i-a4"
+        "V2uAobnkzNTSLHbKO"
       )
       .then(
         (response) => {
