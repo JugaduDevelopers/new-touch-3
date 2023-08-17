@@ -66,17 +66,19 @@ const Home = (props: Props) => {
   return (
     <>
       <header className="bg-redX">
-        <div className="container mx-auto max-md:px-5 py-5 md:px-28 ">
-          <Image
-            src={logo}
-            height={100}
-            width={100}
-            alt="Logo"
-            // className="max-md:hidden ml-10"
-          />
+        <div className="container mx-auto max-md:px-5 py-3 md:px-28 ">
+          <a href="https://newtouch.in/" target="_blank">
+            <Image
+              src={logo}
+              height={100}
+              width={100}
+              alt="Logo"
+              // className="max-md:hidden ml-10"
+            />
+          </a>
         </div>
       </header>
-      <section className=" bg-[#D24648] px-5 pt-10 xl:pt-0 pb-5 lg:h-[500px] xl:h-[650px]">
+      <section className=" bg-[#D24648] px-5 pt-6 xl:pt-0 pb-5  lg:h-[500px] xl:h-[650px]">
         <div className="relative container mx-auto  bg-[#D24648]">
           <h1 className=" hidden xl:block  absolute top-0 left-[12%]  text-gradient text-[100px] min-[1100px]:text-[130px] min-[1200px]:text-[160px] min-[1295px]:text-[180px] leading-[120%] font-900 text-center">
             TREATMENT
@@ -104,7 +106,7 @@ const Home = (props: Props) => {
       <GetAQuote />
 
       {/* LaserScroll */}
-      <div className="mt-10 ">
+      <div className="max-sm:pt-3 pb-5 ">
         <div className="overflow-hidden ">
           <hr className="h-px mb-4 bg-black border-0" />
           <h1 className="scrolling-text text-6xl text-[#FFD7D7]">
@@ -124,7 +126,7 @@ const Home = (props: Props) => {
             className=" h-[300px] lg:h-[500px] "
           />
         </div>
-        <div className="lg:flex-1 md:mt-44 lg:mt-0 mr-5 px-2">
+        <div className="lg:flex-1 md:mt-44 lg:mt-0 mr-5 px-3">
           <h3>What is PRP therapy?</h3>
           <p>
             <span className="text-redX">
@@ -265,7 +267,7 @@ const Home = (props: Props) => {
       {/* Statistics */}
       <div className="flex flex-col items-center justify-center py-10">
         <h3 className="px-5">Our Statitics</h3>
-        <div className="flex  items-center sm:justify-around justify-center px-5 container mx-auto sm:pt-16 pt-10 gap-5 flex-wrap">
+        <div className="flex  items-center sm:justify-around justify-center px-5 container mx-auto  pt-3 gap-5 flex-wrap">
           <div className="flex flex-col sm:items-start items-center ">
             <h3 className="text-redX">24+</h3>
             <p>In-House Doctors</p>
@@ -287,9 +289,9 @@ const Home = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="flex-col item-center justify-center mb-20">
-        <h3 className="text-center mb-10">People really like us!</h3>
-        <div className="flex-wrap   flex gap-10 mx-auto justify-center  items-center">
+      <div className="flex-col item-center justify-center mb-10">
+        <h3 className="text-center mb-3">People really like us!</h3>
+        <div className="flex-wrap   flex gap-10 mx-auto justify-center  items-center px-3">
           <div className="border-2 rounded-2xl p-5 h-40 w-80 border-redX">
             <Image src={google} alt={"google"} />
           </div>

@@ -58,7 +58,7 @@ const GetAQuote = (props: Props) => {
   };
   return (
     <div className="bg-[#F5F5F5]">
-      <div className="flex md:gap-10 gap-5 container mx-auto py-10 md:flex-nowrap flex-wrap px-10">
+      <div className="flex md:gap-10 gap-5 container mx-auto pt-4 md:flex-nowrap flex-wrap px-10">
         <div className="flex flex-col justify-center items-center py-10 md:w-1/4 w-full">
           <p className="text-redX text-start uppercase font-300 text-lg">
             Request for your
