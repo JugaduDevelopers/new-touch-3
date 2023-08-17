@@ -267,7 +267,7 @@ const Home = (props: Props) => {
       {/* Statistics */}
       <div className="flex flex-col items-center justify-center py-10">
         <h3 className="px-5">Our Statitics</h3>
-        <div className="flex  items-center sm:justify-around justify-center px-5 container mx-auto  pt-3 gap-5 flex-wrap">
+        <div className="flex  items-center sm:justify-around justify-center px-5 container mx-auto  pt-5 gap-5 flex-wrap">
           <div className="flex flex-col sm:items-start items-center ">
             <h3 className="text-redX">24+</h3>
             <p>In-House Doctors</p>
