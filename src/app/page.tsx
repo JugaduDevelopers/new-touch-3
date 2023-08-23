@@ -85,9 +85,7 @@ const Home = (props: Props) => {
           </h1>
           <div className="xl:absolute xl:top-36 xl:left-[15%] flex flex-col sm:flex-row items-center  justify-between">
             <div>
-              <h3 className="text-[18px] font-900 uppercase leading-[120%]">
-                <span className="text-white">SkinCare -</span> Assistt
-              </h3>
+              
               <h1 className=" text-[40px] md xl:text-[55px] font-900 leading-[120%]">
                 <span className="text-white">
                   {" "}
